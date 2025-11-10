@@ -1,0 +1,12 @@
+%% Stack implemented with array - top at right
+
+flowchart LR
+  S1[bottom\nindex 0]\n  S2[ ... ]
+  S3[top\nvalue: 3]
+  S1 --> S2 --> S3
+
+  subgraph ops[Operations]
+    direction LR
+    P[push(x)]
+    PO[pop()] --> R[returns x]
+  end

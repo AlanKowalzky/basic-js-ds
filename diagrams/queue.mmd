@@ -1,0 +1,14 @@
+%% Queue implemented with linked list - head -> tail
+
+flowchart LR
+  subgraph queue[Queue]
+    direction LR
+    H[Head\nvalue: 1]
+    N2[Node\nvalue: 2]
+    N3[Node\nvalue: 3]
+  end
+  H --> N2 --> N3
+  classDef node fill:#eef,stroke:#333
+  class H,N2,N3 node
+
+  click H "" "Head is front of queue (dequeue removes this)"

@@ -1,0 +1,10 @@
+%% Remove from list: before and after
+
+flowchart LR
+  subgraph before[Before]
+    A[3] --> B[1] --> C[2] --> D[3] --> E[4]
+  end
+
+  subgraph after[After (remove 3)]
+    B2[1] --> C2[2] --> E2[4]
+  end

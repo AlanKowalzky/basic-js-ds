@@ -1,0 +1,21 @@
+%% Binary Search Tree (BST) - simple example
+%% Nodes show value and left/right relationships
+
+flowchart TD
+  style A fill:#f9f,stroke:#333,stroke-width:2px
+  A[1]
+  B[2]
+  C[0]
+  D[3]
+  E[4]
+
+  A --> B
+  A --> C
+  B --> D
+  D --> E
+
+  subgraph legend[Legend]
+    direction LR
+    L1[Root: 1]
+    L2[Left & Right pointers show BST ordering]
+  end
